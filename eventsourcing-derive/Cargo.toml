@@ -9,10 +9,11 @@ keywords = ["event", "eventsourcing", "aggregate", "command"]
 categories = ["asynchronous","data-structures","rust-patterns","simulation"]
 license = "MPL-2.0"
 homepage = "https://github.com/pholactery/eventsourcing"
-
+edition = "2021"
 [dependencies]
-syn = "0.12"
-quote = "0.4"
+syn = "2.0.15"
+quote = "1.0.26"
+proc-macro2 = "1.0.56"
 
 [lib]
 proc-macro = true
