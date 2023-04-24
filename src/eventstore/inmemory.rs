@@ -6,12 +6,12 @@
 
 #[cfg(feature = "eventstore")]
 use super::super::cloudevents::CloudEvent;
-// use super::super::Event;
-// use super::super::Result;
+use super::super::Event;
+use super::super::Result;
 #[cfg(feature = "eventstore")]
 use super::EventStore;
-// use chrono::prelude::*;
-// use std::sync::Mutex;
+use chrono::prelude::*;
+use std::sync::Mutex;
 #[cfg(feature = "eventstore")]
 /// An simple, in-memory implementation of the event store trait
 pub struct MemoryEventStore {

@@ -109,12 +109,13 @@
 //!   }
 //!}
 //! ```
-
+#[macro_use]
+extern crate eventsourcing_derive;
 extern crate chrono;
 extern crate serde;
-// #[macro_use]
-// extern crate serde_derive;
-// extern crate serde_json;
+#[macro_use]
+extern crate serde_derive;
+extern crate serde_json;
 #[cfg(feature = "eventstore")]
 extern crate uuid;
 
@@ -125,7 +126,7 @@ pub use cloudevents::CloudEvent;
 use eventstore::EventStore;
 use serde::Serialize;
 use std::fmt;
-
+// pub use eventsourcing_derive::{Event, Dispatcher};
 /// An event sourcing error
 #[derive(Debug)]
 pub struct Error {

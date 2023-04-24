@@ -1,7 +1,7 @@
 //! Event store trait and implementations
 #[cfg(feature = "eventstore")]
 use super::cloudevents::CloudEvent;
-// use super::{Event, Result};
+use super::{Event, Result};
 
 #[cfg(feature = "eventstore")]
 pub use self::inmemory::MemoryEventStore;
